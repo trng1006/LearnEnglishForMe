@@ -108,8 +108,8 @@ const INITIAL_ROADMAP = [
   {
     phase: "Giai đoạn 1: Nền tảng (Sống sót cơ bản)",
     lessons: [
-      { id: 1, name: "Hiện tại đơn (Tobe)", type: "lesson", state: "completed" },
-      { id: 2, name: "Hiện tại đơn (V thường)", type: "lesson", state: "current" },
+      { id: 1, name: "Hiện tại đơn (Tobe)", type: "lesson", state: "current" },
+      { id: 2, name: "Hiện tại đơn (V thường)", type: "lesson", state: "locked" },
       { id: 3, name: "Hiện tại tiếp diễn", type: "lesson", state: "locked" },
       { id: 4, name: "Ôn tập 1: Đơn vs Tiếp Diễn", type: "checkpoint", state: "locked" },
       { id: 5, name: "Quá khứ đơn", type: "lesson", state: "locked" },
@@ -164,9 +164,18 @@ function App() {
   const TARGET_CONSECUTIVE = 10;
   
   const [isEndlessMode, setIsEndlessMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.add('dark-theme');
+    } else {
+      document.body.classList.remove('dark-theme');
+    }
+  }, [isDarkMode]);
 
   // State cho Master-Detail Layout (Tài liệu)
-  const [selectedDocName, setSelectedDocName] = useState("Hiện tại đơn (V thường)");
+  const [selectedDocName, setSelectedDocName] = useState("Hiện tại đơn (Tobe)");
 
   const totalLessons = roadmap.reduce((acc, phase) => acc + phase.lessons.length, 0);
   const completedLessons = roadmap.reduce((acc, phase) => acc + phase.lessons.filter(l => l.state === 'completed').length, 0);
@@ -188,10 +197,20 @@ function App() {
       if (!res.ok) throw new Error("API call failed");
       const data = await res.json();
       
-      let formattedData = data.map(q => ({
-        ...q,
-        options: typeof q.options === 'string' ? JSON.parse(q.options) : q.options
-      }));
+      let formattedData = data.map(q => {
+        let parsedOptions = typeof q.options === 'string' ? JSON.parse(q.options) : q.options;
+        if (Array.isArray(parsedOptions) && parsedOptions.length > 0 && typeof parsedOptions[0] === 'string') {
+          parsedOptions = parsedOptions.map((optText, idx) => ({
+            id: String.fromCharCode(65 + idx),
+            text: `${String.fromCharCode(65 + idx)}. ${optText}`,
+            isCorrect: optText === q.correctAnswer
+          }));
+        }
+        return {
+          ...q,
+          options: parsedOptions
+        };
+      });
       
       // Nếu API trả về ít quá (do chưa đủ 600 câu), lấy tạm ngẫu nhiên
       if (formattedData.length === 0) {
@@ -284,6 +303,7 @@ function App() {
         </div>
       </div>
       <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+
         <div className={`streak-badge ${isCheckedIn ? 'active' : 'inactive'}`} onClick={() => setShowCheckInModal(true)}>
           <span>🔥</span><span>{streakDays}</span>
         </div>
@@ -297,6 +317,14 @@ function App() {
           </div>
         </div>
         <div className="score-badge">🏆 {score}</div>
+        <label className="theme-switch" title="Chuyển đổi giao diện sáng/tối">
+          <input 
+            type="checkbox" 
+            checked={isDarkMode} 
+            onChange={() => setIsDarkMode(!isDarkMode)} 
+          />
+          <span className="slider"></span>
+        </label>
       </div>
     </div>
   );

@@ -1,21 +1,21 @@
 ---
 colors:
-  primary: "#6366f1"
-  primary_hover: "#4f46e5"
-  secondary: "#ec4899"
-  background: "#0f172a"
-  surface: "#1e293b"
-  surface_highlight: "#334155"
-  border: "#334155"
-  text_main: "#f8fafc"
-  text_muted: "#94a3b8"
-  success: "#10b981"
-  danger: "#ef4444"
+  primary: "#64748b" # Soft slate
+  primary_hover: "#475569" # Darker soft slate
+  secondary: "#9ca3af" # Soft gray
+  background: "#f9fafb" # Very soft light gray
+  surface: "#ffffff" # Pure white for cards
+  surface_highlight: "#f3f4f6" # Soft hover gray
+  border: "#e5e7eb" # Gentle border
+  text_main: "#374151" # Softer dark gray text
+  text_muted: "#6b7280" # Muted gray text
+  success: "#10b981" # Soft green
+  danger: "#ef4444" # Soft red
 
 typography:
-  fontFamily: "Inter, sans-serif"
-  h1: "2rem, 700"
-  h2: "1.5rem, 600"
+  fontFamily: '"Inter", "Nunito", system-ui, sans-serif'
+  h1: "2rem, 600"
+  h2: "1.5rem, 500"
   body: "1rem, 400"
 
 spacing:
@@ -27,23 +27,24 @@ spacing:
   xxl: "48px"
 
 rounded:
-  sm: "6px"
+  sm: "8px"
   md: "12px"
-  lg: "24px"
+  lg: "16px"
   full: "9999px"
 
 components:
-  card: "background: surface, border: 1px solid border, border-radius: lg"
-  button_primary: "background: primary, color: text_main, border-radius: full, padding: md xl"
+  card: "background: surface, border: 1px solid border, border-radius: lg, box-shadow: soft"
+  button_primary: "background: primary, color: white, border-radius: full, padding: md xl"
   nav_pill: "background: surface_highlight, color: text_main, border-radius: full, padding: sm md"
 ---
 
-# Design System: TenseMaster UI
+# Design System: TenseMaster UI (Soft Minimalist Gray)
 
-Đây là hệ thống thiết kế cho dự án TenseMaster, dựa trên cảm hứng từ bản thiết kế Figma của user nhưng được làm mới theo phong cách **Modern Dark Mode** (Tối và mượt mà).
+Đây là hệ thống thiết kế cho dự án TenseMaster, mang phong cách **Soft Minimalist** với tone màu xám nhạt nhẹ nhàng, thanh lịch và mềm mại hơn.
 
 ### Rationale (Lý do chọn thiết kế)
-- **Background & Surface:** Sử dụng màu Slate (xanh đá sẫm - `#0f172a`) để tạo chiều sâu và cảm giác cao cấp.
-- **Primary Color:** Xanh Indigo (`#6366f1`) cực kỳ rực rỡ, phù hợp làm nút CTA ("Bắt đầu ngay", "Chiến thôi nào").
-- **Shapes:** Tất cả nút bấm và thẻ (Card) đều có bo góc lớn (border-radius: `24px` hoặc `9999px`) để đem lại cảm giác thân thiện, giảm bớt sự cứng nhắc của các ứng dụng học tập truyền thống.
-- **Micro-interactions:** Mọi hiệu ứng hover trên nút hoặc thẻ đều có transition mềm mại.
+- **Background & Surface:** Sử dụng màu nền xám rất nhạt (`#f9fafb`) kết hợp với nền trắng (`#ffffff`) cho thẻ nội dung. Sự tương phản dịu nhẹ giúp giảm mỏi mắt.
+- **Color Palette:** Tone xám đá (Slate Gray - `#64748b`) làm chủ đạo, đem lại sự tập trung cao, không bị gắt.
+- **Typography:** Trở lại font chữ Sans-serif hiện đại, mượt mà (`Inter`, `Nunito`) giúp giao diện trông thân thiện và thanh thoát hơn.
+- **Shapes:** Các góc bo được khôi phục ở mức vừa phải (`12px` - `16px`) cho các khối và bo tròn hoàn toàn (`9999px`) cho nút bấm, đem lại cảm giác mượt mà và dễ chạm.
+- **Shadows:** Đổ bóng siêu nhạt và khuếch tán rộng (`rgba(0,0,0,0.04)`) để giao diện trông như đang lơ lửng một cách tinh tế.

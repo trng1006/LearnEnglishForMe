@@ -13,11 +13,11 @@
 .doc-detail-paper {
   flex: 1;
   min-height: 500px;
-  background: linear-gradient(145deg, var(--surface), var(--background));
+  background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: var(--rounded-lg);
   padding: 40px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.04);
   animation: fadeIn 0.4s ease-out;
   position: relative;
   position: sticky;
@@ -80,14 +80,23 @@
 }
 
 .sidebar-item.active {
-  background: linear-gradient(90deg, var(--primary), var(--primary-hover));
+  background: var(--primary);
   color: white;
   border-color: transparent;
   transform: translateX(-16px);
-  box-shadow: -5px 5px 20px rgba(99, 102, 241, 0.4);
+  box-shadow: -5px 5px 20px rgba(100, 116, 139, 0.15);
 }
 
 .sidebar-item.active::after {
   content: '➤';
   font-size: 0.9rem;
+}
+
+/* Dark Theme Overrides */
+.dark-theme .doc-detail-paper {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.dark-theme .sidebar-item.active {
+  box-shadow: -5px 5px 20px rgba(129, 140, 248, 0.4);
 }
