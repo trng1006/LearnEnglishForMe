@@ -1,0 +1,156 @@
+[
+  {
+    "id": 1,
+    "tense": "Hiện tại đơn (V thường)",
+    "question": "My father is a pilot. He ____ all around the world.",
+    "options": [
+      { "id": "A", "text": "A. fly", "isCorrect": false },
+      { "id": "B", "text": "B. flies", "isCorrect": true },
+      { "id": "C", "text": "C. is flying", "isCorrect": false },
+      { "id": "D", "text": "D. flys", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 2,
+    "tense": "Hiện tại đơn (V thường)",
+    "question": "Sarah and her husband ____ a lot of money to charity every year.",
+    "options": [
+      { "id": "A", "text": "A. donates", "isCorrect": false },
+      { "id": "B", "text": "B. donate", "isCorrect": true },
+      { "id": "C", "text": "C. are donating", "isCorrect": false },
+      { "id": "D", "text": "D. donating", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 3,
+    "tense": "Hiện tại đơn (V thường)",
+    "question": "____ your brother usually ____ breakfast before going to school?",
+    "options": [
+      { "id": "A", "text": "A. Do / has", "isCorrect": false },
+      { "id": "B", "text": "B. Does / has", "isCorrect": false },
+      { "id": "C", "text": "C. Does / have", "isCorrect": true },
+      { "id": "D", "text": "D. Do / have", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 4,
+    "tense": "Hiện tại đơn (V thường)",
+    "question": "Water ____ at 100 degrees Celsius under standard atmospheric pressure.",
+    "options": [
+      { "id": "A", "text": "A. boil", "isCorrect": false },
+      { "id": "B", "text": "B. is boiling", "isCorrect": false },
+      { "id": "C", "text": "C. boils", "isCorrect": true },
+      { "id": "D", "text": "D. boiled", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 5,
+    "tense": "Hiện tại đơn (V thường)",
+    "question": "I ____ to the gym very often, maybe just once a month.",
+    "options": [
+      { "id": "A", "text": "A. don't go", "isCorrect": true },
+      { "id": "B", "text": "B. doesn't go", "isCorrect": false },
+      { "id": "C", "text": "C. am not going", "isCorrect": false },
+      { "id": "D", "text": "D. haven't go", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 6,
+    "tense": "Hiện tại đơn (V thường)",
+    "question": "The train to London ____ at 8:45 AM every morning.",
+    "options": [
+      { "id": "A", "text": "A. leave", "isCorrect": false },
+      { "id": "B", "text": "B. leaves", "isCorrect": true },
+      { "id": "C", "text": "C. leaving", "isCorrect": false },
+      { "id": "D", "text": "D. is leaving", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 7,
+    "tense": "Hiện tại đơn (V thường)",
+    "question": "How often ____ you ____ your grandparents in the countryside?",
+    "options": [
+      { "id": "A", "text": "A. do / visits", "isCorrect": false },
+      { "id": "B", "text": "B. does / visit", "isCorrect": false },
+      { "id": "C", "text": "C. do / visit", "isCorrect": true },
+      { "id": "D", "text": "D. are / visiting", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 8,
+    "tense": "Hiện tại đơn (V thường)",
+    "question": "My dog always ____ when he sees a stranger approaching the gate.",
+    "options": [
+      { "id": "A", "text": "A. bark", "isCorrect": false },
+      { "id": "B", "text": "B. barks", "isCorrect": true },
+      { "id": "C", "text": "C. is barking", "isCorrect": false },
+      { "id": "D", "text": "D. barking", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 9,
+    "tense": "Hiện tại đơn (V thường)",
+    "question": "The company ____ its employees a bonus at the end of the year.",
+    "options": [
+      { "id": "A", "text": "A. pay", "isCorrect": false },
+      { "id": "B", "text": "B. are paying", "isCorrect": false },
+      { "id": "C", "text": "C. pays", "isCorrect": true },
+      { "id": "D", "text": "D. paying", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 10,
+    "tense": "Hiện tại đơn (V thường)",
+    "question": "John is very lazy. He ____ do any housework.",
+    "options": [
+      { "id": "A", "text": "A. never", "isCorrect": false },
+      { "id": "B", "text": "B. doesn't never", "isCorrect": false },
+      { "id": "C", "text": "C. doesn't", "isCorrect": true },
+      { "id": "D", "text": "D. isn't", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 11,
+    "tense": "Hiện tại đơn (V thường)",
+    "question": "Most children ____ eating vegetables.",
+    "options": [
+      { "id": "A", "text": "A. hates", "isCorrect": false },
+      { "id": "B", "text": "B. hate", "isCorrect": true },
+      { "id": "C", "text": "C. are hating", "isCorrect": false },
+      { "id": "D", "text": "D. doesn't hate", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 12,
+    "tense": "Hiện tại đơn (V thường)",
+    "question": "____ it ____ a lot in your hometown during the winter?",
+    "options": [
+      { "id": "A", "text": "A. Do / snow", "isCorrect": false },
+      { "id": "B", "text": "B. Does / snow", "isCorrect": true },
+      { "id": "C", "text": "C. Does / snows", "isCorrect": false },
+      { "id": "D", "text": "D. Is / snow", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 13,
+    "tense": "Hiện tại đơn (Tobe)",
+    "question": "Look at the sky! The stars ____ so bright tonight.",
+    "options": [
+      { "id": "A", "text": "A. is", "isCorrect": false },
+      { "id": "B", "text": "B. am", "isCorrect": false },
+      { "id": "C", "text": "C. are", "isCorrect": true },
+      { "id": "D", "text": "D. be", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 14,
+    "tense": "Hiện tại đơn (Tobe)",
+    "question": "Why ____ you always so late for the meetings?",
+    "options": [
+      { "id": "A", "text": "A. do", "isCorrect": false },
+      { "id": "B", "text": "B. are", "isCorrect": true },
+      { "id": "C", "text": "C. is", "isCorrect": false },
+      { "id": "D", "text": "D. does", "isCorrect": false }
+    ]
+  }
+]
