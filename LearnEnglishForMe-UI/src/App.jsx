@@ -365,8 +365,8 @@ function App() {
               </div>
 
               <div>
-                <div style={{ fontWeight: '800', color: '#3b82f6', textTransform: 'uppercase', fontSize: '0.9rem', letterSpacing: '1px' }}>VÍ DỤ</div> 
-                <div style={{ color: 'var(--text-muted)', fontStyle: 'italic', background: 'rgba(59, 130, 246, 0.1)', padding: '16px', borderRadius: '8px', borderLeft: '4px solid #3b82f6', marginTop: '8px' }}>
+                <div style={{ fontWeight: '800', color: 'var(--secondary)', textTransform: 'uppercase', fontSize: '0.9rem', letterSpacing: '1px' }}>VÍ DỤ</div> 
+                <div style={{ color: 'var(--text-main)', fontStyle: 'italic', background: 'var(--surface-highlight)', padding: '16px', borderRadius: '8px', borderLeft: '4px solid var(--secondary)', marginTop: '8px' }}>
                   "{selectedDoc.example}"
                 </div>
               </div>
@@ -492,8 +492,8 @@ function App() {
         <h1 style={{ marginBottom: '40px' }}>Chặng: {currentLessonName}</h1>
         
         {docInfo && (
-          <div style={{ background: 'rgba(99, 102, 241, 0.1)', border: '1px solid var(--primary)', borderRadius: 'var(--rounded-md)', padding: '24px', width: '100%', maxWidth: '600px', marginBottom: '24px', textAlign: 'left' }}>
-            <h3 style={{ color: 'var(--primary)', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <div style={{ background: 'var(--surface-highlight)', border: '1px solid var(--border)', borderRadius: 'var(--rounded-md)', padding: '24px', width: '100%', maxWidth: '600px', marginBottom: '24px', textAlign: 'left' }}>
+            <h3 style={{ color: 'var(--text-main)', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
               <span>💡</span> Bí kíp qua ải
             </h3>
             <p style={{ color: 'var(--text-main)', marginBottom: '8px', fontSize: '1.05rem' }}><b>Cách dùng:</b> <span style={{ color: 'var(--text-muted)' }}>{docInfo.usage}</span></p>
